@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<!-- IDs for all the commands exposed by VisualStudio. -->
+  <Extern href="stdidcmd.h"/>
+  <!-- Command ids for the menus provided by the shell. -->
+  <Extern href="vsshlids.h"/>
+
+  <!--The Commands section for commands, menus, and menu groups. -->
+  <Commands package="guidPasteAtPackage">
+    
+		<!-- Define menu groups. -->
+    <Groups>
+      <Group guid="guidPasteAtPackageCmdSet" id="MenuGroup" priority="0x0600">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_EDIT"/>
+      </Group>
+    </Groups>
+
+    <!-- Buttons the user can interact with, like a menu command or a button or combo box in a toolbar. -->
+    <Buttons>
+      <Button guid="guidPasteAtPackageCmdSet" id="PasteAtId" priority="0x0100" type="Button">
+        <Parent guid="guidPasteAtPackageCmdSet" id="MenuGroup" />
+        <Icon guid="guidImages" id="bmpPic1" />
+        <Strings>
+          <ButtonText>oPaste: At</ButtonText>
+        </Strings>
+      </Button>
+    </Buttons>
+
+    <!-- Bitmaps that are used for the commands. -->
+    <Bitmaps>
+      <Bitmap guid="guidImages" href="Resources\PasteAt.png" usedList="bmpPic1, bmpPic2, bmpPicSearch, bmpPicX, bmpPicArrows, bmpPicStrikethrough"/>
+    </Bitmaps>
+	</Commands>
+	
+	
+	<!-- Keyboard bindings for commands -->
+	<KeyBindings>
+		<KeyBinding guid="guidPasteAtPackageCmdSet" id="PasteAtId" key1="VK_INSERT" mod1="Control" editor="guidVSStd97" />
+	</KeyBindings>
+	
+	<!-- Symbols for all. -->
+  <Symbols>
+    <!-- Package GUID. -->
+    <GuidSymbol name="guidPasteAtPackage" value="{639eec6e-e477-4d44-a32e-9fcb3f52c319}" />
+
+    <!-- Menu commands GUID. -->
+    <GuidSymbol name="guidPasteAtPackageCmdSet" value="{c6afa260-170f-498e-8b25-424de3990614}">
+      <IDSymbol name="MenuGroup" value="0x1020" />
+      <IDSymbol name="PasteAtId" value="0x0100" />
+    </GuidSymbol>
+		
+		<!-- Bitmaps GUID. -->
+    <GuidSymbol name="guidImages" value="{b07e0bf6-04c5-4f45-b296-56a4d99a7aa6}" >
+      <IDSymbol name="bmpPic1" value="1" />
+      <IDSymbol name="bmpPic2" value="2" />
+      <IDSymbol name="bmpPicSearch" value="3" />
+      <IDSymbol name="bmpPicX" value="4" />
+      <IDSymbol name="bmpPicArrows" value="5" />
+      <IDSymbol name="bmpPicStrikethrough" value="6" />
+    </GuidSymbol>
+	</Symbols>
+</CommandTable>

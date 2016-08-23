@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+	<Metadata>
+		<Identity Id="vsix_paste.0rez.6e90647f-99d5-4382-b515-ecf268b1eda7" Version="1.0" Language="en-US" Publisher="0rez" />
+		<DisplayName>oPaste</DisplayName>
+		<Description xml:space="preserve">Paste without moving cursor in Visual Studio.</Description>
+		<MoreInfo>https://github.com/0rez/vsix-paste</MoreInfo>
+		<License>LICENSE.txt</License>
+		<Icon>favicon.ico</Icon>
+		<PreviewImage>favicon.ico</PreviewImage>
+		<Tags>Paste At</Tags>
+	</Metadata>
+	<Installation>
+		<InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0]" />
+	</Installation>
+	<Dependencies>
+		<Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Installed" Version="[4.5]" />
+		<Dependency Id="Microsoft.VisualStudio.MPF.14.0" DisplayName="Visual Studio MPF 14.0" d:Source="Installed" Version="[14.0]" />
+	</Dependencies>
+	<Assets>
+		<Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+	</Assets>
+</PackageManifest>

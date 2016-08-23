@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "src", "src\src.csproj", "{6E88EDEE-0FE7-4FBC-8941-73E77538F4DC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0", "0", "{6864497D-A06E-483C-86BC-7870ED97B76B}"
+	ProjectSection(SolutionItems) = preProject
+		favicon.ico = favicon.ico
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E88EDEE-0FE7-4FBC-8941-73E77538F4DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E88EDEE-0FE7-4FBC-8941-73E77538F4DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E88EDEE-0FE7-4FBC-8941-73E77538F4DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E88EDEE-0FE7-4FBC-8941-73E77538F4DC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
